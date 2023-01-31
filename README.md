@@ -17,12 +17,11 @@ This project is a prototype database that could be used for modern recreation ce
   - View most popular fitness classes, i.e. sorted fitness classes by amount of customers registered in them;
   - Perform natural join on tables of user’s choice;
 
-<div>
-  <img src="./src/ER_diagram.jpg" width="250" height="450" />
-</div>
+<p>
+<img src = "https://github.com/brian-kong/Recreation-Center-Database/blob/main/ER_diagram.jpg" width = "350px" height = "auto">
+</p>
 
 ## Queries: 
-
 # Insert: 
 - "INSERT INTO customer VALUES (?,?,?,?,?,?)" 
 - "INSERT INTO membership VALUES (?,?)"
@@ -69,7 +68,54 @@ This project is a prototype database that could be used for modern recreation ce
 - "SELECT * FROM customer c WHERE NOT EXISTS ((SELECT e.eventName, e.eventDate FROM events e)MINUS(SELECT p.eventName, p.eventDate FROM participatesin p WHERE p.customerID=c.customerID))"
   
 
-### Insert (customer)
+## Insert(Customer)
+
+<p>
+<img src = "https://github.com/brian-kong/Recreation-Center-Database/blob/main/Insert.jpg" width = "350px" height = "auto">
+</p>
+
+## Delete(Customer)
+
+<p>
+<img src = "https://github.com/brian-kong/Recreation-Center-Database/blob/main/Insert.jpg" width = "350px" height = "auto">
+</p>
+
+## Update(Membership)
+
+<p>
+<img src = "https://github.com/brian-kong/Recreation-Center-Database/blob/main/Insert.jpg" width = "350px" height = "auto">
+</p>
+
+## Select(Facility)
+
+<p>
+<img src = "https://github.com/brian-kong/Recreation-Center-Database/blob/main/select.jpg" width = "350px" height = "auto">
+</p>
+
+## Project(Facility)
+
+<p>
+<img src = "https://github.com/brian-kong/Recreation-Center-Database/blob/main/Delete.jpg" width = "350px" height = "auto">
+</p>
+
+## Join(Tables)
+
+<p>
+<img src = "https://github.com/brian-kong/Recreation-Center-Database/blob/main/join.jpg" width = "350px" height = "auto">
+</p>
+
+## Aggregate(Membership Prices)
+
+<p>
+<img src = "https://github.com/brian-kong/Recreation-Center-Database/blob/main/aggregate.jpg" width = "350px" height = "auto">
+</p>
+
+## Division(Customers who participate in all events)
+
+<p>
+<img src = "https://github.com/brian-kong/Recreation-Center-Database/blob/main/division.jpg" width = "350px" height = "auto">
+</p>
+
 
 
 
