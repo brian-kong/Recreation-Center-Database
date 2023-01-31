@@ -17,7 +17,9 @@ This project is a prototype database that could be used for modern recreation ce
   - View most popular fitness classes, i.e. sorted fitness classes by amount of customers registered in them;
   - Perform natural join on tables of user’s choice;
 
-![Diagram 1](./src/ER_diagram.jpg)
+<div>
+  <img src="./src/ER_diagram.jpg" width="250" height="450" />
+</div>
 
 ## Queries: 
 
@@ -67,15 +69,11 @@ This project is a prototype database that could be used for modern recreation ce
 - "SELECT * FROM customer c WHERE NOT EXISTS ((SELECT e.eventName, e.eventDate FROM events e)MINUS(SELECT p.eventName, p.eventDate FROM participatesin p WHERE p.customerID=c.customerID))"
   
 
-### Where to find in the code
-
-### handles all database related transactions
-
-[Click Here](./src/ca/ubc/cs304/database/DatabaseConnectionHandler.java) 
-
-### main controller class
-
-[Click Here](./src/ca/ubc/cs304/controller/RecreationCenter.java)
-
 ### Insert (customer)
+
+
+
+
+
+
 
