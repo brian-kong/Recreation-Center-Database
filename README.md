@@ -1,7 +1,16 @@
 ### Recreation-Center-Database
 
 CRUD android app Recreational Center Database project using MySql, Java Spring GUI connected with JDBC. 
-This project is a prototype database that could be used for modern recreation centers and gyms 
+This project is a prototype database that could be used for modern recreation centers and gyms (A
+real-world database application taking inspiration from public recreational centers). This also included
+drawing the ER diagram, where the entities and relationships of the systems are modelled.
+
+<p>
+<img src = "https://github.com/brian-kong/Recreation-Center-Database/blob/main/ER_diagram.jpg" width = "350px" height = "auto">
+</p>
+
+Then, we mapped the diagram to tables, which included deciding on keys and normalizing tables to a 3NF schema 
+to reduce redundecy. Finally, we created the tables in SQL, and populated them with dummy data.
 
   - View/add/delete/modify customers;
   - View/add/delete/modify memberships; 
@@ -16,10 +25,6 @@ This project is a prototype database that could be used for modern recreation ce
   - View fitness classes, in both simple and more detailed views;
   - View most popular fitness classes, i.e. sorted fitness classes by amount of customers registered in them;
   - Perform natural join on tables of user’s choice;
-
-<p>
-<img src = "https://github.com/brian-kong/Recreation-Center-Database/blob/main/ER_diagram.jpg" width = "350px" height = "auto">
-</p>
 
 ## Queries: 
 # Insert: 
@@ -68,19 +73,19 @@ This project is a prototype database that could be used for modern recreation ce
 - "SELECT * FROM customer c WHERE NOT EXISTS ((SELECT e.eventName, e.eventDate FROM events e)MINUS(SELECT p.eventName, p.eventDate FROM participatesin p WHERE p.customerID=c.customerID))"
   
 
-## Insert(Customer)
+## Insert(A new customer to the table)
 
 <p>
 <img src = "https://github.com/brian-kong/Recreation-Center-Database/blob/main/Insert.jpg" width = "350px" height = "auto">
 </p>
 
-## Delete(Customer)
+## Delete(A customer from the table)
 
 <p>
 <img src = "https://github.com/brian-kong/Recreation-Center-Database/blob/main/Insert.jpg" width = "350px" height = "auto">
 </p>
 
-## Update(Membership)
+## Update(Membership for customers)
 
 <p>
 <img src = "https://github.com/brian-kong/Recreation-Center-Database/blob/main/Insert.jpg" width = "350px" height = "auto">
